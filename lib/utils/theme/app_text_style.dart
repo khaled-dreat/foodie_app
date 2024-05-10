@@ -29,7 +29,7 @@ class AppTextStyle {
     );
   }
 
-  static TextStyle styleBold(context) {
+  static TextStyle styleBold14(context) {
     return TextStyle(
       color: AppColors.white,
       fontSize: 14,
@@ -38,7 +38,7 @@ class AppTextStyle {
     );
   }
 
-  static TextStyle styleMedium(context) {
+  static TextStyle styleMedium10(context) {
     return TextStyle(
       color: AppColors.lightGray,
       fontSize: 10,
@@ -47,7 +47,7 @@ class AppTextStyle {
     );
   }
 
-  static TextStyle styleRegular(context) {
+  static TextStyle styleRegular10(context) {
     return TextStyle(
       color: AppColors.lightGray,
       fontSize: 10,

@@ -30,7 +30,7 @@ class OnBoardingCubit extends Cubit<int> {
     List<String> onBorderSuptitle = [
       "You don't have to go far to find a good restaurant,we have provided all the restaurants that is near you",
       "Now eat well, don't leave the house,You can choose your favorite food only with one click",
-      "You can eat at expensive restaurants withaffordable price",
+      "You can eat at expensive restaurants with affordable price",
     ];
     return onBorderSuptitle[state];
   }

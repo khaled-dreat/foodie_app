@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:foodie_app/utils/constant/app_image.dart';
 
 class OnBoardingCubit extends Cubit<int> {
   OnBoardingCubit() : super(0);
@@ -10,9 +11,9 @@ class OnBoardingCubit extends Cubit<int> {
 
   String onBorderImages() {
     List<String> imgList = [
-      "assets/svg/on_bording/1.svg",
-      "assets/svg/on_bording/2.svg",
-      "assets/svg/on_bording/3.svg",
+      Appimages.svgOnBording1,
+      Appimages.svgOnBording2,
+      Appimages.svgOnBording3,
     ];
     return imgList[state];
   }

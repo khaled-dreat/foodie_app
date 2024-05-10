@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/utils/theme/app_colors.dart';
 
 class CustomDotIndicator extends StatelessWidget {
   const CustomDotIndicator({super.key, required this.isActive});
@@ -7,10 +8,10 @@ class CustomDotIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
-      width: isActive ? 30 : 8,
-      height: 8,
+      width: 10,
+      height: 10,
       decoration: ShapeDecoration(
-          color: const Color(0xFFE7E7E7),
+          color: isActive ? AppColors.green : AppColors.lightGreen,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
     );

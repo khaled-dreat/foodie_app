@@ -19,18 +19,18 @@ class OnBoardingCubit extends Cubit<int> {
 
   String onBordertitle() {
     List<String> onBordertitle = [
-      "Welcome to Shoppify app",
-      "exclusive offer!",
-      "are you ready?",
+      "Nearby restaurants",
+      "Select the Favorites Menu",
+      "Good food at a cheap price",
     ];
     return onBordertitle[state];
   }
 
   String onBorderSuptitle() {
     List<String> onBorderSuptitle = [
-      "Discover with us all the wonderful benefits it offers you.",
-      "Get details about exclusive offers and discounts available to new customers.",
-      "Let's start your journey with us!",
+      "You don't have to go far to find a good restaurant,we have provided all the restaurants that is near you",
+      "Now eat well, don't leave the house,You can choose your favorite food only with one click",
+      "You can eat at expensive restaurants withaffordable price",
     ];
     return onBorderSuptitle[state];
   }

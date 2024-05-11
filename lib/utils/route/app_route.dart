@@ -7,11 +7,11 @@ class AppRoute {
   // * Pages App
   static Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
     OnBordingview.nameRoute: (context) => const OnBordingview(),
-    AuthWelcomeView.nameRoute: (context) => const AuthWelcomeView(),
+    AuthView.nameRoute: (context) => const AuthView(),
   };
 
   // * Inte Route
-  static String inteRoute = AuthWelcomeView.nameRoute;
+  static String inteRoute = AuthView.nameRoute;
 
   // * push Name
   static void go(BuildContext context, String nameRoute) =>

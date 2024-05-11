@@ -32,7 +32,7 @@ class AppTextStyle {
   static TextStyle styleBold14(context) {
     return TextStyle(
       color: AppColors.white,
-      fontSize: 14,
+      fontSize: 17,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w700,
     );
@@ -47,10 +47,10 @@ class AppTextStyle {
     );
   }
 
-  static TextStyle styleRegular10(context) {
+  static TextStyle styleRegular13(context) {
     return TextStyle(
       color: AppColors.lightGray,
-      fontSize: 10,
+      fontSize: 13,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w400,
     );

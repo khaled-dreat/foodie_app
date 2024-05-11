@@ -4,8 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../utils/theme/app_text_style.dart';
 import '../../cubit/on_boarding_cubit.dart';
 
-class TextWidget extends StatelessWidget {
-  const TextWidget({
+class OnBordingTextWidget extends StatelessWidget {
+  const OnBordingTextWidget({
     super.key,
   });
 
@@ -25,7 +25,7 @@ class TextWidget extends StatelessWidget {
           child: Text(
             context.read<OnBoardingCubit>().onBorderSuptitle(),
             textAlign: TextAlign.center,
-            style: AppTextStyle.styleRegular10(context).copyWith(fontSize: 14),
+            style: AppTextStyle.styleRegular13(context).copyWith(fontSize: 14),
           ),
         ),
       ]);

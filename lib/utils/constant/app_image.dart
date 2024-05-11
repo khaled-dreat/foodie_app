@@ -1,9 +1,13 @@
-class Appimages {
-  Appimages._();
+class AppImages {
+  AppImages._();
 
   /// Assets for svgAuthWelcome
   /// assets/svg/AuthWelcome.svg
   static const String svgAuthWelcome = "assets/svg/AuthWelcome.svg";
+
+  /// Assets for svgGoogle
+  /// assets/svg/google.svg
+  static const String svgGoogle = "assets/svg/google.svg";
 
   /// Assets for svgOnBording1
   /// assets/svg/on_bording_1.svg

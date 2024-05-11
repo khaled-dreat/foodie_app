@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_app/features/on_boarding/presentation/pages/widgets/next_page_widget.dart';
-import 'package:foodie_app/features/on_boarding/presentation/pages/widgets/text_widget.dart';
+import 'package:foodie_app/features/on_boarding/presentation/pages/widgets/onbording_text_widget.dart';
 import 'package:svg_flutter/svg.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../cubit/on_boarding_cubit.dart';
@@ -20,7 +20,7 @@ class OnBordingViewBody extends StatelessWidget {
             const SizedBox(
               height: 80,
             ),
-            const TextWidget(),
+            const OnBordingTextWidget(),
             const SizedBox(
               height: 100,
             ),

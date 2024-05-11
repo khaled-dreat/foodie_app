@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../features/auth/presentation/pages/auth_welcome/auth_welcome_view.dart';
+import '../../features/auth/presentation/pages/auth_view.dart';
 import '../../features/on_boarding/presentation/pages/on_bording_view.dart';
 
 class AppRoute {

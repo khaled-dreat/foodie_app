@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodie_app/features/auth/presentation/pages/auth_welcome/widgets/auth_welcome_view_body.dart';
+import 'package:foodie_app/features/auth/presentation/pages/widgets/auth_welcome/auth_view_body.dart';
 
 class AuthWelcomeView extends StatelessWidget {
   static const String nameRoute = "AuthWelcomeView";

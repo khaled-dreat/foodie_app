@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../../features/auth/presentation/pages/auth_view.dart';
+import '../../features/auth/presentation/pages/auth_welcome/auth_welcome_view.dart';
 import '../../features/on_boarding/presentation/pages/on_bording_view.dart';
 
 class AppRoute {
   // * Pages App
   static Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
     OnBordingview.nameRoute: (context) => const OnBordingview(),
-    AuthView.nameRoute: (context) => const AuthView(),
+    AuthWelcomeView.nameRoute: (context) => const AuthWelcomeView(),
   };
 
   // * Inte Route
-  static String inteRoute = AuthView.nameRoute;
+  static String inteRoute = AuthWelcomeView.nameRoute;
 
   // * push Name
   static void go(BuildContext context, String nameRoute) =>

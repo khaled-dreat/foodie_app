@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_app/utils/theme/app_colors.dart';
 import 'package:svg_flutter/svg_flutter.dart';
-import 'package:foodie_app/features/auth/presentation/pages/widgets/auth_welcome/auth_footer.dart';
-import 'package:foodie_app/features/auth/presentation/pages/widgets/auth_welcome/auth_text_widget.dart';
+import 'package:foodie_app/features/auth/presentation/pages/auth_welcome/widgets/auth_footer.dart';
+import 'package:foodie_app/features/auth/presentation/pages/auth_welcome/widgets/auth_text_widget.dart';
 import 'package:foodie_app/utils/constant/app_image.dart';
 import 'custom_btn_auth.dart';
 
-class AuthViewBody extends StatelessWidget {
-  const AuthViewBody({super.key});
+class AuthWelcomeViewBody extends StatelessWidget {
+  const AuthWelcomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {

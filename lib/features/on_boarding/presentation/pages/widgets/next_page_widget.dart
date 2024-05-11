@@ -25,7 +25,7 @@ class NextPageWidget extends StatelessWidget {
               icon: Text(
                 "Skip",
                 style:
-                    AppTextStyle.styleRegular10(context).copyWith(fontSize: 16),
+                    AppTextStyle.styleRegular13(context).copyWith(fontSize: 16),
               )),
           // * DotIndicator
           const DotIndicator(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/features/auth/presentation/pages/registration/widgets/registration_view_body.dart';
 
 class RegistrationView extends StatelessWidget {
   static const String nameRoute = "RegistrationView";
@@ -6,6 +7,8 @@ class RegistrationView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: RegistrationViewBody(),
+    );
   }
 }

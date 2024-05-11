@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../features/auth/presentation/pages/auth_welcome/auth_welcome_view.dart';
+import '../../features/auth/presentation/pages/registration/registration_view.dart';
 import '../../features/on_boarding/presentation/pages/on_bording_view.dart';
 
 class AppRoute {
@@ -8,10 +9,11 @@ class AppRoute {
   static Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
     OnBordingview.nameRoute: (context) => const OnBordingview(),
     AuthWelcomeView.nameRoute: (context) => const AuthWelcomeView(),
+    RegistrationView.nameRoute: (context) => const RegistrationView(),
   };
 
   // * Inte Route
-  static String inteRoute = AuthWelcomeView.nameRoute;
+  static String inteRoute = RegistrationView.nameRoute;
 
   // * push Name
   static void go(BuildContext context, String nameRoute) =>

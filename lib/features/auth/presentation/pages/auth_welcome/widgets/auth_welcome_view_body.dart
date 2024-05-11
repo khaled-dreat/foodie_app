@@ -30,21 +30,7 @@ class AuthWelcomeViewBody extends StatelessWidget {
         CustomBtnAuth(
           isLogin: true,
           title: "Login",
-          onPressed: () {
-            showModalBottomSheet(
-              showDragHandle: true,
-              enableDrag: false,
-              context: context,
-              builder: (context) {
-                return Container(
-                  padding: EdgeInsets.symmetric(horizontal: 15),
-                  child: Column(
-                    children: [CustomAuthTextFormField()],
-                  ),
-                );
-              },
-            );
-          },
+          onPressed: () {},
         ),
         const AuthFooter(
           first: "first",
@@ -52,22 +38,5 @@ class AuthWelcomeViewBody extends StatelessWidget {
         )
       ],
     );
-  }
-}
-
-class CustomAuthTextFormField extends StatelessWidget {
-  const CustomAuthTextFormField({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-        decoration: InputDecoration(
-      label: Text("data"),
-      enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: AppColors.silver)),
-    ));
   }
 }

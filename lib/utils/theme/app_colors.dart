@@ -28,6 +28,7 @@ class AppColors {
   static final Color lightSilver = colorFromHex("#C4C4C4");
   static final Color lightBlue = colorFromHex("#BEC5D1");
   static final Color lightGreen = colorFromHex("#E6E6E6");
+  static final Color everGreen = colorFromHex("#10B981");
   static final Color lightTeal = colorFromHex("#D1FAE5");
   static final Color lightPink = colorFromHex("#F6F6F6");
   static final Color lightBrown = colorFromHex("#F0C7A9");

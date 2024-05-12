@@ -37,7 +37,7 @@ class ForgetPassViewBody extends StatelessWidget {
             "Enter your email address and we will email you instructions on how to reset your password",
             textAlign: TextAlign.center,
           ),
-          Spacer(),
+          const Spacer(),
           CustomBtnAuth(
               title: "SEND",
               onPressed: () {},

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:foodie_app/features/auth/presentation/pages/login/login_view.dart';
 import 'package:foodie_app/features/on_boarding/presentation/pages/widgets/btn_next_index.dart';
+import 'package:foodie_app/utils/route/app_route.dart';
 import 'package:foodie_app/utils/theme/app_text_style.dart';
 
 import '../../cubit/on_boarding_cubit.dart';
@@ -21,7 +23,9 @@ class NextPageWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                AppRoute.goReplace(context, LoginView.nameRoute);
+              },
               icon: Text(
                 "Skip",
                 style:
@@ -31,9 +35,7 @@ class NextPageWidget extends StatelessWidget {
           const DotIndicator(),
           //  const Spacer(),
           // * Next page Button, Get Started Button
-          BlocBuilder<OnBoardingCubit, int>(builder: (context, state) {
-            return const BtnNextIndex();
-          }),
+          BtnNextIndex(),
         ],
       ),
     );

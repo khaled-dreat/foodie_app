@@ -1,9 +1,13 @@
 import 'package:bloc/bloc.dart';
+import 'package:flutter/material.dart';
 import 'package:foodie_app/utils/constant/app_image.dart';
+
+import '../../../../utils/route/app_route.dart';
+import '../../../auth/presentation/pages/login/login_view.dart';
 
 class OnBoardingCubit extends Cubit<int> {
   OnBoardingCubit() : super(0);
-  void nextIndex() {
+  void nextIndex(BuildContext context) {
     if (state < 2) {
       emit(state + 1);
     }

@@ -9,6 +9,7 @@ part 'wrapper_state.dart';
 class WrapperCubit extends Cubit<WrapperState> {
   WrapperCubit() : super(WrapperInitial());
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  Stream<User?> get currentUser => firebaseAuth.authStateChanges();
 
   Future<void> currentUserState() async {
     try {

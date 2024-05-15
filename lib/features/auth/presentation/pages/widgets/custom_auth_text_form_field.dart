@@ -3,15 +3,29 @@ import 'package:foodie_app/utils/theme/app_text_style.dart';
 
 import '../../../../../utils/theme/app_colors.dart';
 
-class CustomAuthTextFormField extends StatelessWidget {
+class CustomAuthTextFormField extends StatefulWidget {
   const CustomAuthTextFormField({
     super.key,
     required this.hintText,
     required this.label,
     required this.isPass,
+    this.onSaved,
+    this.validator,
+    this.keyboardType,
   });
   final String hintText, label;
+  final void Function(String?)? onSaved;
+  final String? Function(String?)? validator;
+  final TextInputType? keyboardType;
+
   final bool isPass;
+
+  @override
+  State<CustomAuthTextFormField> createState() =>
+      _CustomAuthTextFormFieldState();
+}
+
+class _CustomAuthTextFormFieldState extends State<CustomAuthTextFormField> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -20,15 +34,18 @@ class CustomAuthTextFormField extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
           child: Text(
-            label,
+            widget.label,
             style: AppTextStyle.styleSemiBold16(context),
           ),
         ),
         TextFormField(
-            obscureText: isPass,
+            validator: widget.validator,
+            keyboardType: widget.keyboardType,
+            obscureText: widget.isPass,
             obscuringCharacter: '*',
+            onSaved: widget.onSaved,
             decoration: InputDecoration(
-              hintText: hintText,
+              hintText: widget.hintText,
               hintStyle: AppTextStyle.styleRegular13(context),
               focusedBorder: outlineInputBorder(),
               enabledBorder: outlineInputBorder(),

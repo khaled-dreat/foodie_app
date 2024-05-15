@@ -15,9 +15,9 @@ class OnBoardingCubit extends Cubit<int> {
 
   String onBorderImages() {
     List<String> imgList = [
-      AppImages.svgOnBording1,
-      AppImages.svgOnBording2,
-      AppImages.svgOnBording3,
+      Assets.svgOnBording1,
+      Assets.svgOnBording2,
+      Assets.svgOnBording3,
     ];
     return imgList[state];
   }

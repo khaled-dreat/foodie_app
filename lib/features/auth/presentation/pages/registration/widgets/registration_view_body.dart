@@ -28,7 +28,7 @@ class RegistrationViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            SvgPicture.asset(AppImages.svgAuthWelcome),
+            SvgPicture.asset(Assets.svgAuthWelcome),
             const SizedBox(
               height: 20,
             ),

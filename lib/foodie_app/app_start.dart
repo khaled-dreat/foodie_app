@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:foodie_app/features/auth/presentation/maneg/auth/auth_cubit.dart';
 import 'package:foodie_app/features/auth/presentation/maneg/wrapper/wrapper_cubit.dart';
 import 'package:foodie_app/features/auth/presentation/pages/wrapper/widgets/wrapper_stream_builder.dart';
 import 'package:nested/nested.dart';
 import '../utils/route/app_route.dart';
 import '../utils/theme/app_theme_choose.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class AppStart extends StatelessWidget {
+  const AppStart({super.key});
 
   // This widget is the root of your application.
   @override
@@ -33,6 +34,11 @@ List<SingleChildWidget> get providers {
     BlocProvider(
       create: (context) {
         return WrapperCubit();
+      },
+    ),
+    BlocProvider(
+      create: (context) {
+        return AuthCubit();
       },
     ),
   ];

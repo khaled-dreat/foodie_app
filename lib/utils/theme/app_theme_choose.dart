@@ -19,7 +19,7 @@ class AppThemeChoose {
       // * appBar Theme
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.white,
-        elevation: 10,
+        elevation: 0,
         centerTitle: true,
         titleTextStyle: Theme.of(context).textTheme.headline6,
       ),

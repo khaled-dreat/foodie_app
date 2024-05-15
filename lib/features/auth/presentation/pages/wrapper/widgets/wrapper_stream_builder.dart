@@ -21,11 +21,7 @@ class WrapperStreamBuilder extends StatelessWidget {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const AppLoading(loading: TypeLoading.page);
           }
-          if (snapshot.hasData) {
-            return const HomeView();
-          } else {
-            return const OnBordingview();
-          }
+          return snapshot.hasData ? const HomeView() : const OnBordingview();
         });
   }
 }

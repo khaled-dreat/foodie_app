@@ -4,8 +4,8 @@ import 'package:foodie_app/utils/theme/app_text_style.dart';
 
 import '../../../../../../utils/theme/app_colors.dart';
 
-class AuthFooter extends StatelessWidget {
-  const AuthFooter({
+class AuthWelcomeFooter extends StatelessWidget {
+  const AuthWelcomeFooter({
     super.key,
     required this.first,
     required this.second,

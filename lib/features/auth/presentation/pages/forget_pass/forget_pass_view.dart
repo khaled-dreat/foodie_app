@@ -7,8 +7,10 @@ class ForgetPassView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: ForgetPassViewBody(),
+    return Scaffold(
+      appBar: AppBar(),
+      resizeToAvoidBottomInset: false,
+      body: const ForgetPassViewBody(),
     );
   }
 }

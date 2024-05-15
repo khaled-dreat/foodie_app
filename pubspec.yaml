@@ -104,4 +104,4 @@ flutter_assets:
   output_path: lib/utils/constant 
   filename: app_image.dart
   field_prefix:
-  class_name: AppImages
+  class_name: Assets

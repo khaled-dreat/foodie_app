@@ -44,8 +44,8 @@ class _AppLoadingState extends State<AppLoading> {
 
       // * send
       case TypeLoading.send:
-        return LoadingAnimationWidget.dotsTriangle(
-            color: AppColors.everGreen, size: 25);
+        return LoadingAnimationWidget.hexagonDots(
+            color: AppColors.white, size: 25);
     }
   }
 /*

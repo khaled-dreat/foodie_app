@@ -26,7 +26,7 @@ class ForgetPassViewBody extends StatelessWidget {
               height: 100,
             ),
             // * Image
-            SvgPicture.asset(AppImages.svgAuthWelcome),
+            SvgPicture.asset(Assets.svgAuthWelcome),
             const SizedBox(
               height: 20,
             ),

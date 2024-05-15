@@ -18,7 +18,7 @@ class AuthWelcomeViewBody extends StatelessWidget {
         const SizedBox(
           height: 100,
         ),
-        SvgPicture.asset(AppImages.svgAuthWelcome),
+        SvgPicture.asset(Assets.svgAuthWelcome),
         const AuthTextWidget(),
         const SizedBox(
           height: 50,

@@ -14,5 +14,5 @@ void main() async {
   );
   Bloc.observer = SimpleBlocObserver();
 
-  runApp(const MyApp());
+  runApp(const AppStart());
 }

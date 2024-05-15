@@ -36,7 +36,7 @@ class AuthWelcomeViewBody extends StatelessWidget {
           title: "Login",
           onPressed: () {},
         ),
-        const AuthFooter(
+        const AuthWelcomeFooter(
           first: "first",
           second: "second",
         )

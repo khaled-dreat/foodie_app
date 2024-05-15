@@ -31,7 +31,7 @@ class LoginViewBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             // * Image
-            SvgPicture.asset(AppImages.svgAuthWelcome),
+            SvgPicture.asset(Assets.svgAuthWelcome),
             const SizedBox(
               height: 20,
             ),
@@ -85,7 +85,7 @@ class LoginViewBody extends StatelessWidget {
                   keyForm.currentState?.save();
                   await context.read<AuthCubit>().signInWithGoogle();
                 },
-                icon: AppImages.svgGoogle,
+                icon: Assets.svgGoogle,
                 backgroundColor: AppColors.lightGray2,
                 style: AppTextStyle.styleBold14(context)
                     .copyWith(color: AppColors.black)),

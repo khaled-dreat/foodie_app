@@ -10,7 +10,7 @@ class ImageProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipOval(
       child: Image(
-        height: 45,
+        height: 40,
         image: const NetworkImage(
             "https://www.upwork.com/profile-portraits/c1omXvA02zZEGdCF4IZ5XofBUJ1xqhzdhCztiABT7h5Sggh_2vOyt46gOs6UfftAQ9"),
         errorBuilder: (context, error, stackTrace) => const Image(

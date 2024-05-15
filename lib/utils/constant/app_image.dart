@@ -29,6 +29,14 @@ class Assets {
   /// assets/svg/on_bording_3.svg
   static const String svgOnBording3 = "assets/svg/on_bording_3.svg";
 
+  /// Assets for svgOrderCard
+  /// assets/svg/order_card.svg
+  static const String svgOrderCard = "assets/svg/order_card.svg";
+
+  /// Assets for svgOrderCard2
+  /// assets/svg/order_card2.png
+  static const String svgOrderCard2 = "assets/svg/order_card2.png";
+
   /// Assets for svgSaudi
   /// assets/svg/saudi.png
   static const String svgSaudi = "assets/svg/saudi.png";

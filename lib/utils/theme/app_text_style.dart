@@ -47,6 +47,15 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle styleMedium12(context) {
+    return TextStyle(
+      color: AppColors.lightGray,
+      fontSize: 12,
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w500,
+    );
+  }
+
   static TextStyle styleRegular13(context) {
     return TextStyle(
       color: AppColors.lightGray,

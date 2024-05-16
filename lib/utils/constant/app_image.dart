@@ -1,9 +1,14 @@
 class Assets {
   Assets._();
-  
+
   /// Assets for svgAccount
   /// assets/svg/account.png
   static const String svgAccount = "assets/svg/account.png";
+
+  /// Assets for svgAmbrosiaHotel&Restaurant
+  /// assets/svg/AmbrosiaHotel&Restaurant.jpg
+  static const String svgAmbrosiaHotelRestaurant =
+      "assets/svg/AmbrosiaHotel&Restaurant.jpg";
 
   /// Assets for svgAuthWelcome
   /// assets/svg/AuthWelcome.svg
@@ -65,4 +70,3 @@ class Assets {
   /// assets/svg/united_states.png
   static const String svgUnitedStates = "assets/svg/united_states.png";
 }
-

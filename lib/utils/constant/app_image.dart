@@ -9,9 +9,25 @@ class Assets {
   /// assets/svg/AuthWelcome.svg
   static const String svgAuthWelcome = "assets/svg/AuthWelcome.svg";
 
+  /// Assets for svgChickenBiryani
+  /// assets/svg/ChickenBiryani.jpg
+  static const String svgChickenBiryani = "assets/svg/ChickenBiryani.jpg";
+
+  /// Assets for svgChickenKatsu
+  /// assets/svg/ChickenKatsu.jpg
+  static const String svgChickenKatsu = "assets/svg/ChickenKatsu.jpg";
+
+  /// Assets for svgDumpling
+  /// assets/svg/Dumpling.jpg
+  static const String svgDumpling = "assets/svg/Dumpling.jpg";
+
   /// Assets for svgGoogle
   /// assets/svg/google.svg
   static const String svgGoogle = "assets/svg/google.svg";
+
+  /// Assets for svgMarker
+  /// assets/svg/marker.svg
+  static const String svgMarker = "assets/svg/marker.svg";
 
   /// Assets for svgMune
   /// assets/svg/mune.svg
@@ -36,6 +52,10 @@ class Assets {
   /// Assets for svgOrderCard2
   /// assets/svg/order_card2.png
   static const String svgOrderCard2 = "assets/svg/order_card2.png";
+
+  /// Assets for svgSauceTonkatsu
+  /// assets/svg/SauceTonkatsu.jpg
+  static const String svgSauceTonkatsu = "assets/svg/SauceTonkatsu.jpg";
 
   /// Assets for svgSaudi
   /// assets/svg/saudi.png

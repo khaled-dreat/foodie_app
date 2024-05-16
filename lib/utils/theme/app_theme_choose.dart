@@ -25,7 +25,8 @@ class AppThemeChoose {
       ),
       //  *  card theme
       cardTheme: CardTheme(
-        elevation: 5,
+        color: AppColors.white,
+        elevation: 0,
         clipBehavior: Clip.antiAlias,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25),

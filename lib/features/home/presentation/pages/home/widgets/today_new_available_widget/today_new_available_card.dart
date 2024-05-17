@@ -9,9 +9,9 @@ class TodayNewAvailableCard extends StatelessWidget {
     super.key,
     required this.image,
     required this.title,
-    required this.description,
+    required this.place,
   });
-  final String image, title, description;
+  final String image, title, place;
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class TodayNewAvailableCard extends StatelessWidget {
                   ),
                   Expanded(
                     child: Text(
-                      description,
+                      place,
                       style: AppTextStyle.styleMedium12(context),
                     ),
                   )

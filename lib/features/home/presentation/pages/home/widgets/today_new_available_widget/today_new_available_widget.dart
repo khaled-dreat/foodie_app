@@ -30,7 +30,7 @@ class TodayNewAvailableWidget extends StatelessWidget {
     ];
     return Column(
       children: [
-        const CustomHomeListHeader(
+        const CustomListHeader(
           title: "Today New Arivable",
           description: "Best of the today  food list update",
         ),

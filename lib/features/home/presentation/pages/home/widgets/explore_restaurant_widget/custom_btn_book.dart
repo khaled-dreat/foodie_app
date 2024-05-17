@@ -20,7 +20,7 @@ class CustomBtnBook extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 110,
+      width: 100,
       height: 40,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(

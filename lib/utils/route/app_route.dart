@@ -6,6 +6,7 @@ import '../../features/auth/presentation/pages/login/login_view.dart';
 import '../../features/auth/presentation/pages/registration/registration_view.dart';
 import '../../features/auth/presentation/pages/wrapper/wrapper_view.dart';
 import '../../features/home/presentation/pages/home/home_view.dart';
+import '../../features/home/presentation/pages/restaurant_details/restaurant_details_view.dart';
 import '../../features/on_boarding/presentation/pages/on_bording_view.dart';
 import '../../features/splach/presentation/pages/splach_veiw.dart';
 
@@ -20,10 +21,11 @@ class AppRoute {
     HomeView.nameRoute: (context) => const HomeView(),
     WrapperView.nameRoute: (context) => const WrapperView(),
     SplachView.nameRoute: (context) => const SplachView(),
+    RestaurantDetailsView.nameRoute: (context) => const RestaurantDetailsView(),
   };
 
   // * Inte Route
-  static String inteRoute = SplachView.nameRoute;
+  static String inteRoute = RestaurantDetailsView.nameRoute;
 
   // * push Name
   static void go(BuildContext context, String nameRoute) =>

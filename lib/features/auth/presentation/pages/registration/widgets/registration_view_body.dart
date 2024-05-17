@@ -1,6 +1,7 @@
 import 'dart:developer';
 import "package:flutter_bloc/flutter_bloc.dart";
 import 'package:flutter/material.dart';
+import 'package:foodie_app/features/auth/presentation/pages/login/widgets/custom_btn_auth_bloc_consumer.dart';
 import 'package:foodie_app/features/auth/presentation/pages/widgets/auth_field_email.dart';
 import 'package:foodie_app/features/auth/presentation/pages/login/widgets/login_view_body.dart';
 import 'package:foodie_app/features/home/presentation/pages/home/home_view.dart';

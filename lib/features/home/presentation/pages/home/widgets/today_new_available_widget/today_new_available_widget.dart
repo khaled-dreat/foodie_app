@@ -14,19 +14,19 @@ class TodayNewAvailableWidget extends StatelessWidget {
       TodayNewAvailableModel(
           image: Assets.svgChickenBiryani,
           title: "Chicken Biryani",
-          description: "Ambrosia Hotel & Restaurant"),
+          place: "Ambrosia Hotel & Restaurant"),
       TodayNewAvailableModel(
           image: Assets.svgSauceTonkatsu,
           title: "Sauce Tonkatsu",
-          description: "Handi Restaurant, Chittagong"),
+          place: "Handi Restaurant, Chittagong"),
       TodayNewAvailableModel(
           image: Assets.svgChickenKatsu,
           title: "Chicken Katsu",
-          description: "Ambrosia Hotel & Restaurant"),
+          place: "Ambrosia Hotel & Restaurant"),
       TodayNewAvailableModel(
           image: Assets.svgDumpling,
           title: "Dumpling",
-          description: "Ambrosia Hotel & Restaurant"),
+          place: "Ambrosia Hotel & Restaurant"),
     ];
     return Column(
       children: [
@@ -44,7 +44,7 @@ class TodayNewAvailableWidget extends StatelessWidget {
               (e) {
                 return TodayNewAvailableCard(
                   title: e.title,
-                  description: e.description,
+                  place: e.place,
                   image: e.image,
                 );
               },

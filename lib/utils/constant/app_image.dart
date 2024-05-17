@@ -1,18 +1,21 @@
 class Assets {
   Assets._();
-
+  
   /// Assets for svgAccount
   /// assets/svg/account.png
   static const String svgAccount = "assets/svg/account.png";
 
-  /// Assets for svgAmbrosiaHotel&Restaurant
-  /// assets/svg/AmbrosiaHotel&Restaurant.jpg
-  static const String svgAmbrosiaHotelRestaurant =
-      "assets/svg/AmbrosiaHotel&Restaurant.jpg";
+  /// Assets for svgAmbrosiaHotelRestaurant
+  /// assets/svg/AmbrosiaHotelRestaurant.jpg
+  static const String svgAmbrosiaHotelRestaurant = "assets/svg/AmbrosiaHotelRestaurant.jpg";
 
   /// Assets for svgAuthWelcome
   /// assets/svg/AuthWelcome.svg
   static const String svgAuthWelcome = "assets/svg/AuthWelcome.svg";
+
+  /// Assets for svgBookingHistoryIcon
+  /// assets/svg/BookingHistoryIcon.svg
+  static const String svgBookingHistoryIcon = "assets/svg/BookingHistoryIcon.svg";
 
   /// Assets for svgChickenBiryani
   /// assets/svg/ChickenBiryani.jpg
@@ -29,6 +32,14 @@ class Assets {
   /// Assets for svgGoogle
   /// assets/svg/google.svg
   static const String svgGoogle = "assets/svg/google.svg";
+
+  /// Assets for svgHaatkhola
+  /// assets/svg/Haatkhola.jpg
+  static const String svgHaatkhola = "assets/svg/Haatkhola.jpg";
+
+  /// Assets for svgHomeIcon
+  /// assets/svg/HomeIcon.svg
+  static const String svgHomeIcon = "assets/svg/HomeIcon.svg";
 
   /// Assets for svgMarker
   /// assets/svg/marker.svg
@@ -58,6 +69,10 @@ class Assets {
   /// assets/svg/order_card2.png
   static const String svgOrderCard2 = "assets/svg/order_card2.png";
 
+  /// Assets for svgProfileIcon
+  /// assets/svg/ProfileIcon.png
+  static const String svgProfileIcon = "assets/svg/ProfileIcon.png";
+
   /// Assets for svgSauceTonkatsu
   /// assets/svg/SauceTonkatsu.jpg
   static const String svgSauceTonkatsu = "assets/svg/SauceTonkatsu.jpg";
@@ -66,7 +81,12 @@ class Assets {
   /// assets/svg/saudi.png
   static const String svgSaudi = "assets/svg/saudi.png";
 
+  /// Assets for svgTavaRestaurant
+  /// assets/svg/TavaRestaurant.jpg
+  static const String svgTavaRestaurant = "assets/svg/TavaRestaurant.jpg";
+
   /// Assets for svgUnitedStates
   /// assets/svg/united_states.png
   static const String svgUnitedStates = "assets/svg/united_states.png";
 }
+

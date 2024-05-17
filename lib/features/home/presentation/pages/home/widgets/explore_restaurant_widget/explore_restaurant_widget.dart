@@ -27,7 +27,7 @@ class ExploreRestaurantWidget extends StatelessWidget {
     ];
     return Column(
       children: [
-        const CustomHomeListHeader(
+        const CustomListHeader(
             title: "Explore Restaurant",
             description: "Check your city Near by Restaurant"),
         const SizedBox(

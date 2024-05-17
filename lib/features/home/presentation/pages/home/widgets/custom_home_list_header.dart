@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../utils/theme/app_text_style.dart';
 
-class CustomHomeListHeader extends StatelessWidget {
-  const CustomHomeListHeader({
+class CustomListHeader extends StatelessWidget {
+  const CustomListHeader({
     super.key,
     required this.title,
     required this.description,
+    this.color,
   });
   final String title, description;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +26,16 @@ class CustomHomeListHeader extends StatelessWidget {
             const Spacer(),
             Text(
               "See All",
-              style: AppTextStyle.styleMedium10(context).copyWith(fontSize: 12),
+              style: AppTextStyle.styleMedium10(context)
+                  .copyWith(fontSize: 12, color: color),
             ),
-            const Icon(Icons.chevron_right_outlined)
+            const SizedBox(
+              width: 5,
+            ),
+            Icon(
+              Icons.chevron_right_outlined,
+              color: color,
+            )
           ],
         ),
         Text(

@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_app/features/auth/presentation/maneg/auth/auth_cubit.dart';
 import 'package:foodie_app/features/auth/presentation/pages/forget_pass/forget_pass_view.dart';
+import 'package:foodie_app/features/auth/presentation/pages/login/widgets/custom_btn_auth_bloc_consumer.dart';
 import 'package:foodie_app/features/auth/presentation/pages/widgets/auth_field_email.dart';
 import 'package:foodie_app/features/auth/presentation/pages/registration/registration_view.dart';
-import 'package:foodie_app/features/home/presentation/pages/home/home_view.dart';
+import 'package:foodie_app/features/auth/presentation/pages/widgets/custom_btn_auth.dart';
 import 'package:foodie_app/utils/route/app_route.dart';
 import 'package:svg_flutter/svg_flutter.dart';
-
 import '../../../../../../utils/constant/app_image.dart';
 import '../../../../../../utils/theme/app_colors.dart';
 import '../../../../../../utils/theme/app_text_style.dart';
-import '../../../../../../utils/widgets/toast/app_toast.dart';
 import '../../widgets/auth_field_pass.dart';
 import '../../widgets/auth_footer.dart';
-import '../../widgets/custom_btn_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginViewBody extends StatelessWidget {
@@ -105,42 +103,6 @@ class LoginViewBody extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class CustomBtnAuthBlocConsumer extends StatelessWidget {
-  const CustomBtnAuthBlocConsumer(
-      {super.key,
-      required this.keyForm,
-      required this.title,
-      required this.backgroundColor,
-      required this.style,
-      this.onPressed});
-  final GlobalKey<FormState> keyForm;
-  final String title;
-  final Color backgroundColor;
-  final TextStyle style;
-  final void Function()? onPressed;
-  @override
-  Widget build(BuildContext context) {
-    return BlocConsumer<AuthCubit, AuthState>(
-      listener: (context, state) {
-        if (state is AuthFailure) {
-          AppToast.toast(state.errMessage);
-        }
-        if (state is AuthSuccess) {
-          AppRoute.goReplace(context, HomeView.nameRoute);
-        }
-      },
-      builder: (context, state) {
-        return CustomBtnAuth(
-            title: title,
-            onPressed: onPressed,
-            isLoading: state is AuthLoading ? true : false,
-            backgroundColor: backgroundColor,
-            style: style);
-      },
     );
   }
 }

@@ -21,6 +21,10 @@ class Assets {
   /// assets/svg/BookingHistoryIcon.svg
   static const String svgBookingHistoryIcon = "assets/svg/BookingHistoryIcon.svg";
 
+  /// Assets for svgCartIcon
+  /// assets/svg/CartIcon.svg
+  static const String svgCartIcon = "assets/svg/CartIcon.svg";
+
   /// Assets for svgChickenBiryani
   /// assets/svg/ChickenBiryani.jpg
   static const String svgChickenBiryani = "assets/svg/ChickenBiryani.jpg";
@@ -28,6 +32,14 @@ class Assets {
   /// Assets for svgChickenKatsu
   /// assets/svg/ChickenKatsu.jpg
   static const String svgChickenKatsu = "assets/svg/ChickenKatsu.jpg";
+
+  /// Assets for svgClockIcon
+  /// assets/svg/ClockIcon.svg
+  static const String svgClockIcon = "assets/svg/ClockIcon.svg";
+
+  /// Assets for svgDeliveryIcon
+  /// assets/svg/DeliveryIcon.svg
+  static const String svgDeliveryIcon = "assets/svg/DeliveryIcon.svg";
 
   /// Assets for svgDumpling
   /// assets/svg/Dumpling.jpg
@@ -85,10 +97,6 @@ class Assets {
   /// assets/svg/on_bording_3.svg
   static const String svgOnBording3 = "assets/svg/on_bording_3.svg";
 
-  /// Assets for svgOpenHouseIcon
-  /// assets/svg/OpenHouseIcon.svg
-  static const String svgOpenHouseIcon = "assets/svg/OpenHouseIcon.svg";
-
   /// Assets for svgOrderCard
   /// assets/svg/order_card.svg
   static const String svgOrderCard = "assets/svg/order_card.svg";
@@ -112,6 +120,10 @@ class Assets {
   /// Assets for svgSaudi
   /// assets/svg/saudi.png
   static const String svgSaudi = "assets/svg/saudi.png";
+
+  /// Assets for svgStarIcon
+  /// assets/svg/StarIcon.svg
+  static const String svgStarIcon = "assets/svg/StarIcon.svg";
 
   /// Assets for svgTavaRestaurant
   /// assets/svg/TavaRestaurant.jpg

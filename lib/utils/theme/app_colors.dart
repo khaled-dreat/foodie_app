@@ -15,9 +15,11 @@ class AppColors {
 
   static final Color white = colorFromHex("#FFFFFF");
   static final Color green = colorFromHex("#32B768");
+  static final Color skyBlue = colorFromHex("#2C8DFF");
   static final Color darkGray = colorFromHex("#374151");
   static final Color yellow = colorFromHex("#EDB82C");
   static final Color gray = colorFromHex("#4B5563");
+  static final Color platinumGray = colorFromHex("#E9E9E9");
   static final Color lightGray = colorFromHex("#6B7280");
   static final Color charcoalGray = colorFromHex("#E5E5E5");
   static final Color silver = colorFromHex("#9CA3AF");

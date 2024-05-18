@@ -5,6 +5,10 @@ class Assets {
   /// assets/svg/account.png
   static const String svgAccount = "assets/svg/account.png";
 
+  /// Assets for svgAccountIcon
+  /// assets/svg/accountIcon.svg
+  static const String svgAccountIcon = "assets/svg/accountIcon.svg";
+
   /// Assets for svgAmbrosiaHotelRestaurant
   /// assets/svg/AmbrosiaHotelRestaurant.jpg
   static const String svgAmbrosiaHotelRestaurant = "assets/svg/AmbrosiaHotelRestaurant.jpg";
@@ -29,6 +33,14 @@ class Assets {
   /// assets/svg/Dumpling.jpg
   static const String svgDumpling = "assets/svg/Dumpling.jpg";
 
+  /// Assets for svgEditIcon
+  /// assets/svg/EditIcon.svg
+  static const String svgEditIcon = "assets/svg/EditIcon.svg";
+
+  /// Assets for svgFeedBackIcon
+  /// assets/svg/FeedBackIcon.svg
+  static const String svgFeedBackIcon = "assets/svg/FeedBackIcon.svg";
+
   /// Assets for svgGoogle
   /// assets/svg/google.svg
   static const String svgGoogle = "assets/svg/google.svg";
@@ -41,6 +53,10 @@ class Assets {
   /// assets/svg/HomeIcon.svg
   static const String svgHomeIcon = "assets/svg/HomeIcon.svg";
 
+  /// Assets for svgLanguageIcon
+  /// assets/svg/languageIcon.svg
+  static const String svgLanguageIcon = "assets/svg/languageIcon.svg";
+
   /// Assets for svgMarker
   /// assets/svg/marker.svg
   static const String svgMarker = "assets/svg/marker.svg";
@@ -48,6 +64,14 @@ class Assets {
   /// Assets for svgMune
   /// assets/svg/mune.svg
   static const String svgMune = "assets/svg/mune.svg";
+
+  /// Assets for svgNewVersionIcon
+  /// assets/svg/NewVersionIcon.png
+  static const String svgNewVersionIcon = "assets/svg/NewVersionIcon.png";
+
+  /// Assets for svgNotfiction
+  /// assets/svg/notfiction.svg
+  static const String svgNotfiction = "assets/svg/notfiction.svg";
 
   /// Assets for svgOnBording1
   /// assets/svg/on_bording_1.svg
@@ -76,6 +100,10 @@ class Assets {
   /// Assets for svgProfileIcon
   /// assets/svg/ProfileIcon.png
   static const String svgProfileIcon = "assets/svg/ProfileIcon.png";
+
+  /// Assets for svgRateUsIcon
+  /// assets/svg/RateUsIcon.svg
+  static const String svgRateUsIcon = "assets/svg/RateUsIcon.svg";
 
   /// Assets for svgSauceTonkatsu
   /// assets/svg/SauceTonkatsu.jpg

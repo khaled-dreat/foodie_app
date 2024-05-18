@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/features/search/presentation/pages/srh_view.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 
 import '../../../../../../utils/constant/app_image.dart';
@@ -49,70 +50,49 @@ class RestaurantDetailsWidget extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 25),
               child: Image.asset(Assets.svgTavaRestaurant2),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 25),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Row(
-                        children: [
-                          SvgPicture.asset(
-                            Assets.svgOpenHouseIcon,
-                            height: 18,
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          Text(
-                            "Open today",
-                            style: AppTextStyle.styleMedium12(context),
-                          )
-                        ],
-                      ),
-                      const Spacer(),
-                      InkWell(
-                        onTap: () {},
-                        child: Row(
-                          children: [
-                            SvgPicture.asset(
-                              Assets.svgVisitRestaurantIcon,
-                              height: 20,
-                            ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            Text(
-                              "Visit the Restaurant",
-                              style: AppTextStyle.styleMedium12(context)
-                                  .copyWith(
-                                      color: AppColors.skyBlue, fontSize: 13),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Text(
-                    "10:00 AM - 12:00 PM",
-                    style: AppTextStyle.styleSemiBold12(context),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                RatingWidget(rating: "3.5"),
+                Row(
+                  children: [
+                    SvgPicture.asset(
+                      Assets.svgDeliveryIcon,
+                    ),
+                    SizedBox(
+                      width: 3,
+                    ),
+                    Text("Free", style: AppTextStyle.styleRegular13(context))
+                  ],
+                ),
+                Row(
+                  children: [
+                    SvgPicture.asset(
+                      Assets.svgClockIcon,
+                      height: 18,
+                    ),
+                    const SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      "20 min",
+                      style: AppTextStyle.styleRegular13(context)
+                          .copyWith(color: AppColors.darkBlue),
+                    ),
+                  ],
+                ),
+              ],
             ),
-            SizedBox(
-              width: MediaQuery.sizeOf(context).width,
-              child: CustomBtnBook(
-                  title: "Booking",
-                  onPressed: () {},
-                  backgroundColor: AppColors.green,
-                  style: AppTextStyle.styleSemiBold12(context)
-                      .copyWith(color: AppColors.white)),
-            )
+            //   SizedBox(
+            //     width: MediaQuery.sizeOf(context).width,
+            //     child: CustomBtnBook(
+            //         title: "Booking",
+            //         onPressed: () {},
+            //         backgroundColor: AppColors.green,
+            //         style: AppTextStyle.styleSemiBold12(context)
+            //             .copyWith(color: AppColors.white)),
+            //   )
           ],
         ),
       ),

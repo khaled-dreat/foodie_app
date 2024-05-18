@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/features/search/presentation/pages/srh_view.dart';
 import 'other_restaurant/other_restaurant_widget.dart';
 import 'restaurant_details_widget.dart';
 
@@ -7,14 +8,14 @@ class RestaurantDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          RestaurantDetailsWidget(),
-          SizedBox(
+          const RestaurantDetailsWidget(),
+          const SizedBox(
             height: 20,
           ),
           OtherRestaurantWidget()

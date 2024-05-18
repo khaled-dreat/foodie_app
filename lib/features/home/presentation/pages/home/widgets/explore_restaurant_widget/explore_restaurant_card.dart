@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/features/home/presentation/pages/restaurant_details/restaurant_details_view.dart';
+import 'package:foodie_app/features/home/presentation/pages/restaurant_details/widgets/restaurant_details_app_bar.dart';
+import 'package:foodie_app/utils/route/app_route.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 
 import '../../../../../../../utils/constant/app_image.dart';
@@ -60,7 +63,10 @@ class ExploreRestaurantCard extends StatelessWidget {
                       ),
                       CustomBtnBook(
                           title: "Book",
-                          onPressed: () {},
+                          onPressed: () {
+                            AppRoute.go(
+                                context, RestaurantDetailsView.nameRoute);
+                          },
                           backgroundColor: AppColors.green,
                           style: AppTextStyle.styleSemiBold12(context)
                               .copyWith(color: AppColors.white))

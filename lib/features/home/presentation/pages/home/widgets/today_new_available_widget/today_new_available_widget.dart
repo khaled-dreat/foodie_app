@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../../../utils/constant/app_image.dart';
-import '../../../../../data/models/m_today_new_available.dart';
+import '../../../../../data/models/m_food.dart';
 import '../custom_home_list_header.dart';
 import 'today_new_available_card.dart';
 
@@ -10,23 +10,23 @@ class TodayNewAvailableWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<TodayNewAvailableModel> todayNewAvailableModel = [
-      TodayNewAvailableModel(
+    List<FoodModel> todayNewAvailableModel = [
+      FoodModel(
           image: Assets.svgChickenBiryani,
           title: "Chicken Biryani",
-          place: "Ambrosia Hotel & Restaurant"),
-      TodayNewAvailableModel(
+          restaurant: "Ambrosia Hotel & Restaurant"),
+      FoodModel(
           image: Assets.svgSauceTonkatsu,
           title: "Sauce Tonkatsu",
-          place: "Handi Restaurant, Chittagong"),
-      TodayNewAvailableModel(
+          restaurant: "Handi Restaurant, Chittagong"),
+      FoodModel(
           image: Assets.svgChickenKatsu,
           title: "Chicken Katsu",
-          place: "Ambrosia Hotel & Restaurant"),
-      TodayNewAvailableModel(
+          restaurant: "Ambrosia Hotel & Restaurant"),
+      FoodModel(
           image: Assets.svgDumpling,
           title: "Dumpling",
-          place: "Ambrosia Hotel & Restaurant"),
+          restaurant: "Ambrosia Hotel & Restaurant"),
     ];
     return Column(
       children: [
@@ -42,9 +42,9 @@ class TodayNewAvailableWidget extends StatelessWidget {
           child: Row(
             children: todayNewAvailableModel.map(
               (e) {
-                return TodayNewAvailableCard(
+                return FoodCard(
                   title: e.title,
-                  place: e.place,
+                  restaurant: e.restaurant,
                   image: e.image,
                 );
               },

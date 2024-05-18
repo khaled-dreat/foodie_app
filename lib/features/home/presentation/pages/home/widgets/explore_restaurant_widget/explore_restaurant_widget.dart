@@ -15,13 +15,16 @@ class ExploreRestaurantWidget extends StatelessWidget {
       RestaurantModel(
           image: Assets.svgAmbrosiaHotelRestaurant,
           title: "Ambrosia Hotel & Restaurant",
+          rating: "4.5",
           place: "Zakir Hossain Rd, Chittagong"),
       RestaurantModel(
+          rating: "4.1",
           image: Assets.svgTavaRestaurant,
           title: "Tava Restaurant",
           place: "kazi Deiry, Taiger Pass Chittagong"),
       RestaurantModel(
           image: Assets.svgHaatkhola,
+          rating: "3.5",
           title: "Haatkhola",
           place: "6 Surson Road, Chittagong")
     ];

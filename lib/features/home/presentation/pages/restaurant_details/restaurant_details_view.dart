@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_app/utils/theme/app_colors.dart';
-import 'package:validators/validators.dart';
-import 'widgets/home_details_app_bar.dart';
+import 'widgets/restaurant_details_app_bar.dart';
 import 'widgets/restaurant_details_view_body.dart';
 
 class RestaurantDetailsView extends StatelessWidget {
@@ -12,7 +11,7 @@ class RestaurantDetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.charcoalGray,
-      appBar: const HomeDetailsAppBar(),
+      appBar: const RestaurantDetailsAppBar(),
       body: const RestaurantDetailsViewBody(),
     );
   }

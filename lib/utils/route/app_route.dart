@@ -25,7 +25,7 @@ class AppRoute {
   };
 
   // * Inte Route
-  static String inteRoute = RestaurantDetailsView.nameRoute;
+  static String inteRoute = HomeView.nameRoute;
 
   // * push Name
   static void go(BuildContext context, String nameRoute) =>

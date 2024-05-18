@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../../../../utils/theme/app_colors.dart';
 import '../../../../../../utils/theme/app_text_style.dart';
 
-class HomeDetailsAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const HomeDetailsAppBar({super.key});
+class RestaurantDetailsAppBar extends StatelessWidget
+    implements PreferredSizeWidget {
+  const RestaurantDetailsAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,7 @@ class HomeDetailsAppBar extends StatelessWidget implements PreferredSizeWidget {
             .copyWith(color: AppColors.white),
       ),
       //  elevation: 5,
+      foregroundColor: AppColors.white,
       backgroundColor: AppColors.green,
       shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(

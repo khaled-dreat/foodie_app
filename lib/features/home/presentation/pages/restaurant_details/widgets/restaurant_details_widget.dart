@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:foodie_app/features/search/presentation/pages/srh_view.dart';
 import 'package:svg_flutter/svg_flutter.dart';
-
 import '../../../../../../utils/constant/app_image.dart';
 import '../../../../../../utils/theme/app_colors.dart';
 import '../../../../../../utils/theme/app_text_style.dart';
-import '../../home/widgets/explore_restaurant_widget/custom_btn_book.dart';
+import '../../../../../../utils/widgets/information_widget/information_widget.dart';
 
 class RestaurantDetailsWidget extends StatelessWidget {
   const RestaurantDetailsWidget({
@@ -50,40 +48,7 @@ class RestaurantDetailsWidget extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 25),
               child: Image.asset(Assets.svgTavaRestaurant2),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                RatingWidget(rating: "3.5"),
-                Row(
-                  children: [
-                    SvgPicture.asset(
-                      Assets.svgDeliveryIcon,
-                    ),
-                    SizedBox(
-                      width: 3,
-                    ),
-                    Text("Free", style: AppTextStyle.styleRegular13(context))
-                  ],
-                ),
-                Row(
-                  children: [
-                    SvgPicture.asset(
-                      Assets.svgClockIcon,
-                      height: 18,
-                    ),
-                    const SizedBox(
-                      width: 5,
-                    ),
-                    Text(
-                      "20 min",
-                      style: AppTextStyle.styleRegular13(context)
-                          .copyWith(color: AppColors.darkBlue),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+            const InformationWidget(),
             //   SizedBox(
             //     width: MediaQuery.sizeOf(context).width,
             //     child: CustomBtnBook(

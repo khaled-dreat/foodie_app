@@ -77,6 +77,10 @@ class Assets {
   /// assets/svg/marker.svg
   static const String svgMarker = "assets/svg/marker.svg";
 
+  /// Assets for svgMinimize24dp
+  /// assets/svg/minimize_24dp.png
+  static const String svgMinimize24dp = "assets/svg/minimize_24dp.png";
+
   /// Assets for svgMinimizeIcon
   /// assets/svg/minimizeIcon.svg
   static const String svgMinimizeIcon = "assets/svg/minimizeIcon.svg";

@@ -2,25 +2,27 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../../utils/widgets/loading/app_loading.dart';
 
-class CustomBtnBook extends StatelessWidget {
-  const CustomBtnBook({
+class CustomBtn extends StatelessWidget {
+  const CustomBtn({
     super.key,
     required this.title,
     required this.onPressed,
     required this.backgroundColor,
     required this.style,
     this.isLoading = false,
+    this.height,
   });
   final Color backgroundColor;
   final String title;
   final TextStyle style;
   final bool isLoading;
+  final double? height;
 
   final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 100,
+      width: height ?? 100,
       height: 40,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(

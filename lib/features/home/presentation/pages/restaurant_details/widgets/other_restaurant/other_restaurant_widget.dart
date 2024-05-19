@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/features/home/presentation/pages/home/widgets/today_new_available_widget/today_new_available_card.dart';
 import '../../../../../../../utils/constant/app_image.dart';
 import '../../../../../../../utils/theme/app_colors.dart';
+import '../../../../../../search/presentation/pages/srh_view.dart';
+import '../../../../../data/models/m_food.dart';
 import '../../../../../data/models/m_restaurant.dart';
 import '../../../home/widgets/custom_home_list_header.dart';
 import 'other_restaurant_card.dart';
@@ -12,44 +15,77 @@ class OtherRestaurantWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<RestaurantModel> restaurantModel = [
-      RestaurantModel(
-          image: Assets.svgAmbrosiaHotelRestaurant,
-          title: "Ambrosia Hotel & Restaurant",
-          place: "Zakir Hossain Rd, Chittagong"),
-      RestaurantModel(
-          image: Assets.svgTavaRestaurant,
-          title: "Tava Restaurant",
-          place: "kazi Deiry, Taiger Pass Chittagong"),
-      RestaurantModel(
-          image: Assets.svgHaatkhola,
-          title: "Haatkhola",
-          place: "6 Surson Road, Chittagong")
+    List<String> recentKeywords = [
+      "Burger",
+      "Sandwich",
+      "Pizza",
+      "Sandwich",
     ];
+    List<FoodModel> foodModel = [
+      FoodModel(
+          image: Assets.svgChickenBiryani,
+          title: "Chicken Biryani",
+          restaurant: "Ambrosia Hotel & Restaurant"),
+      FoodModel(
+          image: Assets.svgSauceTonkatsu,
+          title: "Sauce Tonkatsu",
+          restaurant: "Handi Restaurant, Chittagong"),
+      FoodModel(
+          image: Assets.svgChickenKatsu,
+          title: "Chicken Katsu",
+          restaurant: "Ambrosia Hotel & Restaurant"),
+      FoodModel(
+          image: Assets.svgDumpling,
+          title: "Dumpling",
+          restaurant: "Ambrosia Hotel & Restaurant"),
+      FoodModel(
+          image: Assets.svgChickenBiryani,
+          title: "Chicken Biryani",
+          restaurant: "Ambrosia Hotel & Restaurant"),
+      FoodModel(
+          image: Assets.svgSauceTonkatsu,
+          title: "Sauce Tonkatsu",
+          restaurant: "Handi Restaurant, Chittagong"),
+    ];
+
     return Container(
+      height: 600,
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 8),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15), color: AppColors.white),
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 15),
-            child: CustomListHeader(
-                color: AppColors.green,
-                title: "List other restaurant",
-                description: "check the menu at this restaurant"),
+          RecentKeywordsWidget(recentKeywords: recentKeywords),
+          Expanded(
+            child: GridView.builder(
+              shrinkWrap: false,
+              itemCount: foodModel.length,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2, mainAxisExtent: 250),
+              itemBuilder: (context, index) => FoodCard(
+                  image: foodModel.elementAt(index).image,
+                  title: foodModel.elementAt(index).title,
+                  restaurant: foodModel.elementAt(index).restaurant),
+            ),
           ),
-          Column(
-            children: restaurantModel.map(
-              (e) {
-                return OtherRestaurantCard(
-                  image: e.image,
-                  place: e.place,
-                  title: e.title,
-                );
-              },
-            ).toList(),
-          )
+          //  Padding(
+          //    padding: const EdgeInsets.only(left: 15),
+          //    child: CustomListHeader(
+          //        color: AppColors.green,
+          //        title: "List other restaurant",
+          //        description: "check the menu at this restaurant"),
+          //  ),
+          //  Column(
+          //    children: restaurantModel.map(
+          //      (e) {
+          //        return OtherRestaurantCard(
+          //          image: e.image,
+          //          place: e.place,
+          //          title: e.title,
+          //        );
+          //      },
+          //    ).toList(),
+          //  )
         ],
       ),
     );

@@ -10,24 +10,74 @@ class TodayNewAvailableWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<FoodModel> todayNewAvailableModel = [
+    List<FoodModel> foodModel = [
       FoodModel(
-          image: Assets.svgChickenBiryani,
-          title: "Chicken Biryani",
-          restaurant: "Ambrosia Hotel & Restaurant"),
+        id: 1,
+        name: "Burger",
+        img: Assets.svgChickenBiryani,
+        active: true,
+        price: 5.99,
+        isFreeDelivery: true,
+        details: "Delicious beef burger with cheese and lettuce",
+        rating: 4.5,
+        size: "Medium",
+        restaurantID: 101,
+        offers: ["Buy 1 Get 1 Free", "20% off on weekends"],
+      ),
       FoodModel(
-          image: Assets.svgSauceTonkatsu,
-          title: "Sauce Tonkatsu",
-          restaurant: "Handi Restaurant, Chittagong"),
+        id: 2,
+        name: "Pizza",
+        img: Assets.svgChickenBiryani,
+        active: true,
+        price: 8.99,
+        isFreeDelivery: false,
+        details: "Pepperoni pizza with extra cheese",
+        rating: 4.7,
+        size: "Large",
+        restaurantID: 102,
+        offers: ["Free drink with purchase", "10% off on Mondays"],
+      ),
       FoodModel(
-          image: Assets.svgChickenKatsu,
-          title: "Chicken Katsu",
-          restaurant: "Ambrosia Hotel & Restaurant"),
+        id: 3,
+        name: "Pasta",
+        img: Assets.svgChickenBiryani,
+        active: false,
+        price: 7.99,
+        isFreeDelivery: true,
+        details: "Creamy Alfredo pasta with chicken",
+        rating: 4.3,
+        size: "Small",
+        restaurantID: 103,
+        offers: ["Free garlic bread", "15% off for students"],
+      ),
       FoodModel(
-          image: Assets.svgDumpling,
-          title: "Dumpling",
-          restaurant: "Ambrosia Hotel & Restaurant"),
+        id: 4,
+        name: "Salad",
+        img: Assets.svgChickenBiryani,
+        active: true,
+        price: 4.99,
+        isFreeDelivery: true,
+        details: "Fresh garden salad with vinaigrette",
+        rating: 4.2,
+        size: "Large",
+        restaurantID: 104,
+        offers: ["Free dressing on the side", "Buy 2 Get 1 Free"],
+      ),
+      FoodModel(
+        id: 5,
+        name: "Sushi",
+        img: Assets.svgChickenBiryani,
+        active: true,
+        price: 12.99,
+        isFreeDelivery: false,
+        details: "Assorted sushi platter with wasabi and soy sauce",
+        rating: 4.8,
+        size: "Medium",
+        restaurantID: 105,
+        offers: ["Free miso soup", "20% off for new customers"],
+      ),
     ];
+
     return Column(
       children: [
         const CustomListHeader(
@@ -40,12 +90,12 @@ class TodayNewAvailableWidget extends StatelessWidget {
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: todayNewAvailableModel.map(
+            children: foodModel.map(
               (e) {
                 return FoodCard(
-                  title: e.title,
-                  restaurant: e.restaurant,
-                  image: e.image,
+                  title: e.name,
+                  restaurant: "e.restaurant",
+                  image: e.img,
                 );
               },
             ).toList(),

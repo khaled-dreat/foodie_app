@@ -61,7 +61,7 @@ class ExploreRestaurantCard extends StatelessWidget {
                               .copyWith(fontSize: 10),
                         ),
                       ),
-                      CustomBtnBook(
+                      CustomBtn(
                           title: "Book",
                           onPressed: () {
                             AppRoute.go(

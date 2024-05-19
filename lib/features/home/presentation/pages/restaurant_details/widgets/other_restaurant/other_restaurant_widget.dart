@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:foodie_app/features/home/presentation/pages/home/widgets/today_new_available_widget/today_new_available_card.dart';
 import '../../../../../../../utils/constant/app_image.dart';
 import '../../../../../../../utils/theme/app_colors.dart';
-import '../../../../../../search/presentation/pages/srh_view.dart';
+import '../../../../../../../utils/widgets/recent_keywords_widget/recent_keywords_widget.dart';
 import '../../../../../data/models/m_food.dart';
-import '../../../../../data/models/m_restaurant.dart';
-import '../../../home/widgets/custom_home_list_header.dart';
-import 'other_restaurant_card.dart';
 
 class OtherRestaurantWidget extends StatelessWidget {
   const OtherRestaurantWidget({

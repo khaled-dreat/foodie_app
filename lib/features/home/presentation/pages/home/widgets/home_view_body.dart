@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/features/search/presentation/pages/srh_view.dart';
+import 'package:foodie_app/utils/route/app_route.dart';
 import '../../../../../../utils/widgets/text_form_field/coutom_text_form_srh.dart';
 import 'explore_restaurant_widget/explore_restaurant_widget.dart';
 import 'pest_brand.dart';
@@ -10,24 +12,29 @@ class HomeViewBody extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            CoutomTextFormSrh(),
-            SizedBox(
+            CoutomTextFormSrh(
+              onTap: () {
+                AppRoute.go(context, SrhView.nameRoute);
+              },
+              readOnly: true,
+            ),
+            const SizedBox(
               height: 30,
             ),
-            PestBrand(),
-            SizedBox(
+            const PestBrand(),
+            const SizedBox(
               height: 30,
             ),
-            TodayNewAvailableWidget(),
-            SizedBox(
+            const TodayNewAvailableWidget(),
+            const SizedBox(
               height: 30,
             ),
-            ExploreRestaurantWidget()
+            const ExploreRestaurantWidget()
           ],
         ),
       ),

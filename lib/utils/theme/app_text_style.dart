@@ -38,6 +38,15 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle styleBold20(context) {
+    return TextStyle(
+      color: AppColors.darkBlue,
+      fontSize: 20,
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w700,
+    );
+  }
+
   static TextStyle styleMedium10(context) {
     return TextStyle(
       color: AppColors.lightGray,
@@ -60,6 +69,15 @@ class AppTextStyle {
     return TextStyle(
       color: AppColors.lightGray,
       fontSize: 13,
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w400,
+    );
+  }
+
+  static TextStyle styleRegular14(context) {
+    return TextStyle(
+      color: AppColors.lightGray,
+      fontSize: 14,
       fontFamily: 'Inter',
       fontWeight: FontWeight.w400,
     );

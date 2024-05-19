@@ -59,7 +59,7 @@ class OtherRestaurantCard extends StatelessWidget {
                             .copyWith(fontSize: 10),
                       ),
                     ),
-                    CustomBtnBook(
+                    CustomBtn(
                         title: "Check",
                         onPressed: () {},
                         backgroundColor: AppColors.green,

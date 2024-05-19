@@ -25,7 +25,7 @@ class ProfileViewBody extends StatelessWidget {
         ),
         SizedBox(
           width: 150,
-          child: CustomBtnBook(
+          child: CustomBtn(
               title: "Logout",
               onPressed: () {},
               backgroundColor: AppColors.crimson,

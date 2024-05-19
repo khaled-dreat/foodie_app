@@ -49,6 +49,10 @@ class Assets {
   /// assets/svg/EditIcon.svg
   static const String svgEditIcon = "assets/svg/EditIcon.svg";
 
+  /// Assets for svgEllipseLogo
+  /// assets/svg/EllipseLogo.jpg
+  static const String svgEllipseLogo = "assets/svg/EllipseLogo.jpg";
+
   /// Assets for svgFeedBackIcon
   /// assets/svg/FeedBackIcon.svg
   static const String svgFeedBackIcon = "assets/svg/FeedBackIcon.svg";
@@ -72,6 +76,10 @@ class Assets {
   /// Assets for svgMarker
   /// assets/svg/marker.svg
   static const String svgMarker = "assets/svg/marker.svg";
+
+  /// Assets for svgMinimizeIcon
+  /// assets/svg/minimizeIcon.svg
+  static const String svgMinimizeIcon = "assets/svg/minimizeIcon.svg";
 
   /// Assets for svgMune
   /// assets/svg/mune.svg
@@ -121,6 +129,10 @@ class Assets {
   /// assets/svg/saudi.png
   static const String svgSaudi = "assets/svg/saudi.png";
 
+  /// Assets for svgSaveIcon
+  /// assets/svg/SaveIcon.svg
+  static const String svgSaveIcon = "assets/svg/SaveIcon.svg";
+
   /// Assets for svgStarIcon
   /// assets/svg/StarIcon.svg
   static const String svgStarIcon = "assets/svg/StarIcon.svg";
@@ -132,6 +144,10 @@ class Assets {
   /// Assets for svgTavaRestaurant2
   /// assets/svg/TavaRestaurant2.jpg
   static const String svgTavaRestaurant2 = "assets/svg/TavaRestaurant2.jpg";
+
+  /// Assets for svgUnSaveIcon
+  /// assets/svg/UnSaveIcon.svg
+  static const String svgUnSaveIcon = "assets/svg/UnSaveIcon.svg";
 
   /// Assets for svgUnitedStates
   /// assets/svg/united_states.png

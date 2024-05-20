@@ -6,6 +6,7 @@ import '../../features/auth/presentation/pages/login/login_view.dart';
 import '../../features/auth/presentation/pages/registration/registration_view.dart';
 import '../../features/auth/presentation/pages/wrapper/wrapper_view.dart';
 import '../../features/cart/presentation/pages/my_cart/my_cart_view.dart';
+import '../../features/control_panal/control_panal.dart';
 import '../../features/home/presentation/pages/food_details/food_details_view.dart';
 import '../../features/home/presentation/pages/home/home_view.dart';
 import '../../features/home/presentation/pages/restaurant_details/restaurant_details_view.dart';
@@ -30,10 +31,11 @@ class AppRoute {
     SrhView.nameRoute: (context) => const SrhView(),
     FoodDetailsView.nameRoute: (context) => const FoodDetailsView(),
     MyCartView.nameRoute: (context) => const MyCartView(),
+    ControlPanl.nameRoute: (context) => const ControlPanl(),
   };
 
   // * Inte Route
-  static String inteRoute = MyCartView.nameRoute;
+  static String inteRoute = SplachView.nameRoute;
 
   // * push Name
   static void go(BuildContext context, String nameRoute) =>

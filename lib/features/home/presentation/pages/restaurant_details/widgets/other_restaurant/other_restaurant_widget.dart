@@ -93,7 +93,7 @@ class OtherRestaurantWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(15), color: AppColors.white),
       child: Column(
         children: [
-          RecentKeywordsWidget(recentKeywords: recentKeywords),
+          //     RecentKeywordsWidget(recentKeywords: recentKeywords),
           Expanded(
             child: GridView.builder(
               shrinkWrap: false,

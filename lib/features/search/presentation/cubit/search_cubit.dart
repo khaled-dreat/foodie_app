@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:foodie_app/features/search/domain/entities/food_entite.dart';
 import 'package:foodie_app/features/search/domain/usecases/srh_food_use_case.dart';
 part 'search_state.dart';
@@ -8,16 +9,15 @@ class SearchCubit extends Cubit<SearchState> {
 
   final SrhFoodUseCase srhFoodUseCase;
 
-  Future<void> srhFood({required String srhKey}) async {
-    emit(SearchLoading());
-    var result = await srhFoodUseCase.call(srhKey);
-    result.fold(
-      (failure) {
-        emit(SearchFailure(errMessage: failure.message));
-      },
-      (foodList) {
-        emit(SearchSuccess(foodList: foodList));
-      },
-    );
+  Stream<QuerySnapshot<Map<String, dynamic>>> srhFood(
+      {required String srhKey}) {
+    try {
+      emit(SearchLoading());
+      return srhFoodUseCase.call(srhKey);
+    } catch (e) {
+      emit(SearchFailure(errMessage: e.toString()));
+    }
+    // Add a return statement here
+    throw Exception('Unexpected error occurred');
   }
 }

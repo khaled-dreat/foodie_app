@@ -5,5 +5,5 @@ import '../../../../utils/constant/app_failure.dart';
 import '../entities/food_entite.dart';
 
 abstract class SrhRepo {
-  Future<Either<Failure, List<FoodEntity>>> srhQuery({String srhText});
+  Stream<QuerySnapshot<Map<String, dynamic>>> srhQuery(String srhText);
 }

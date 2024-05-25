@@ -7,21 +7,14 @@ import 'package:foodie_app/utils/constant/app_failure.dart';
 import '../../domain/entities/food_entite.dart';
 import '../../domain/repositories/srh_reop.dart';
 
-class SrhRepoImpl extends SrhRepo {
+class SrhRepoEmpl extends SrhRepo {
   final SrhRemoteDataSource srhRemoteDataSource;
 
-  SrhRepoImpl({required this.srhRemoteDataSource});
+  SrhRepoEmpl({required this.srhRemoteDataSource});
+
   @override
-  Future<Either<Failure, List<FoodEntity>>> srhQuery({String? srhText}) async {
-    try {
-      List<FoodEntity> foodList;
-      foodList = await srhRemoteDataSource.srhQuery(srhText: srhText!);
-      return right(foodList);
-    } catch (e) {
-      if (e is DioException) {
-        return left(ServerFailure.fromDiorError(e));
-      }
-      return left(ServerFailure(message: e.toString()));
-    }
+  Stream<QuerySnapshot<Map<String, dynamic>>> srhQuery(String srhText) {
+    // Corrected signature
+    return srhRemoteDataSource.srhQuery(srhText: srhText);
   }
 }

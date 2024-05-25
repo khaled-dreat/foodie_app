@@ -6,27 +6,25 @@ import '../../domain/entities/food_entite.dart';
 
 abstract class SrhRemoteDataSource {
   // * Fetch All Books
-  Future<List<FoodEntity>> srhQuery({String srhText});
+  Stream<QuerySnapshot<Map<String, dynamic>>> srhQuery({String srhText});
 }
 
-class HomeRemoteDataSourceImpl implements SrhRemoteDataSource {
+class SrhRemoteDataSourceEmpl implements SrhRemoteDataSource {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   @override
-  Future<List<FoodEntity>> srhQuery({String? srhText}) async {
-    Query<Map<String, dynamic>> query = firestore
+  Stream<QuerySnapshot<Map<String, dynamic>>> srhQuery({String? srhText}) {
+    var query = firestore
         .collection(AppFirebaseKey.foodModels)
         .orderBy(AppFirebaseKey.name)
-        .startAt([srhText]).endAt(["$srhText\uf8ff"]);
+        .startAt([srhText]).endAt(["$srhText\uf8ff"]).snapshots();
 
-    QuerySnapshot<Map<String, dynamic>> querySnapshot = await query.get();
+    query;
 
-    List<FoodEntity> foodList = getFoodList(querySnapshot.docs);
-    return foodList;
+    return query;
   }
 }
 
-List<FoodEntity> getFoodList(
-    List<QueryDocumentSnapshot<Map<String, dynamic>>> docs) {
+List<FoodEntity> getFoodList(var docs) {
   return docs.map((doc) => FoodEntity.fromMap(doc.data())).toList();
 }
